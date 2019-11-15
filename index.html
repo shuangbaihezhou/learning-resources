@@ -53,7 +53,7 @@
     <a class="current" href=".">Home</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#hackweek-preliminary-tutorials">Hackweek Preliminary Tutorials</a></li>
+    <li class="toctree-l2"><a href="#hackweek-introduction">Hackweek Introduction</a></li>
     
         <ul>
         
@@ -67,7 +67,7 @@
         
             <li><a class="toctree-l3" href="#what-can-i-do-in-advance-to-prepare">What can I do in advance to prepare?</a></li>
         
-            <li><a class="toctree-l3" href="#how-do-i-ask-questions-about-the-icesat-2-hackweek">How do I ask questions about the ICESat-2 Hackweek</a></li>
+            <li><a class="toctree-l3" href="#how-do-i-ask-questions-about-the-hackweek">How do I ask questions about the Hackweek?</a></li>
         
         </ul>
     
@@ -77,12 +77,32 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="about/">About</a>
+    <a class="" href="github/">Lesson 1</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="numpy/">numpy</a>
+    <a class="" href="jupyterhub/">Lesson 2</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="conda/">Lesson 3</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="earthdata/">Lesson 4</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="numpy/">Lesson 5</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="pandas.md">Lesson 6</a>
 	    </li>
           
         </ul>
@@ -120,20 +140,20 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="hackweek-preliminary-tutorials">Hackweek Preliminary Tutorials</h1>
+                <h1 id="hackweek-introduction">Hackweek Introduction</h1>
 <h3 id="overview">Overview</h3>
-<p>Welcome to the Cryospheric Sciences with ICESat-2 hackweek! Hackweeks were originally designed by the University of Washington's <a href="https://escience.washington.edu/">eScience Institute</a>, and they aim to provide a welcoming learning environment where you can learn new software tools, collaborate with colleagues, build community and make progress on specific projects. Our <a href="https://www.pnas.org/content/115/36/8872">hackweek model</a> is constantly evolving and we invite you actively participate as we experiment with new approaches and ideas.</p>
+<p>Welcome to the <a href="https://icesat-2hackweek.github.io">Cryospheric Sciences with ICESat-2</a> hackweek! Hackweeks were originally designed by the University of Washington's <a href="https://escience.washington.edu/">eScience Institute</a>, and they aim to provide a welcoming learning environment where you can learn new software tools, collaborate with colleagues, build community and make progress on specific projects. Our <a href="https://www.pnas.org/content/115/36/8872">hackweek model</a> is constantly evolving and we invite you actively participate as we experiment with new approaches and ideas.</p>
 <p><img alt="hackweek-mission" src="img/hackweek-mission.png" /></p>
 <p>This preliminary tutorial is one that we would like you to complete before arriving to the hackweek. The purpose is to learn about how we plan to work with various software tools and how you can best prepare for our event. We would like everyone works through this tutorial so that we can make the best use of our time together in person. </p>
 <h3 id="what-is-the-format-of-this-event">What is the format of this event?</h3>
 <p>Here is a general roadmap of our event:</p>
 <ul>
 <li>we begin the hackweek with a review of our code of conduct, and we build a set of guidelines for co-creating a positive and welcoming learning environment</li>
-<li>each morning (and occasionally early afternoons) will involve tutorials and short presentations</li>
-<li>each afternoon will be time for working on group projects. We'll check-in with project teams on a regular basis to find what's working and where challenges lie.</li>
-<li>we will guide participants through the formation of groups on day 1</li>
+<li>each day will include some combination of tutorials, short presentations and/or open project time / hacking.</li>
+<li>we will guide participants through the formation of groups early in the event
+*we'll check-in with project teams on a regular basis to find what's working and where challenges lie.</li>
 <li>there will be opportunities for peer learning and open tutorials on topics of most interest to the group</li>
-<li>participants will be invited to present their work on day 5 before we depart </li>
+<li>participants will be invited to present their work at the end of the event</li>
 </ul>
 <h3 id="will-my-laptop-work-for-this-hackathon">Will my laptop work for this hackathon?</h3>
 <p>All participants will be required to have their own laptop. The absolute minimum requirement is any laptop with a functioning web browser so that you can access our shared cloud computing resources. We will also teach you to install software on your own computer. For that we recommend the following:</p>
@@ -144,24 +164,22 @@
 </ul>
 <p>If you do not have a laptop, please contact us and we might be able to loan you one during the event.</p>
 <h3 id="will-i-need-to-learn-a-specific-programming-language-to-participate">Will I need to learn a specific programming language to participate?</h3>
-<p>We welcome all participants regardless of their programming background. In order to teach our content in a consistent way we need to select one programming languge. We have chosen Python because it is free and open source, and has many libraries suitable for efficient manipulation of ICESat-2 data. </p>
-<p>If you're new to Python, here are some excellent resources we recommend working through in advance of our event:</p>
-<ul>
-<li><a href="https://software-carpentry.org/lessons/">Software carpentry lessons</a>, especially the <a href="http://swcarpentry.github.io/python-novice-inflammation/">Python tutorial</a></li>
-<li><a href="https://github.com/jakevdp/PythonDataScienceHandbook">Python Data Science Handbook</a> </li>
-<li>a collection of a variety of <a href="https://github.com/uwescience/Online-Educational-Resources">data science lessons</a> developed by the UW eScience Institute</li>
-</ul>
-<p>If you're a Python expert, we hope you can use this event as an opportunity to share some of your knowledge with your peers!</p>
+<p>We welcome all participants regardless of their programming background. In order to teach our content in a consistent way we need to select one programming languge. We have chosen Python because it is free and open source, and has many libraries suitable for efficient manipulation of a variety of different types of data. </p>
 <h3 id="what-can-i-do-in-advance-to-prepare">What can I do in advance to prepare?</h3>
-<p>We require all participants to work through the next 4 lessons in advance of our event. The lessons are brief and will ensure that we are all set up and ready to work when we arrive.</p>
+<p>We require all participants to work through the following lessons in advance of our event. The lessons are brief and will ensure that we are all set up and ready to work when we arrive.</p>
+<h4 id="setting-up-your-laptop-and-getting-access-to-computing-resources">Setting up your laptop and getting access to computing resources</h4>
 <ul>
-<li><a href="https://icesat-2hackweek.github.io/preliminary/01-Git-setup">Lesson 1</a>: setting up a GitHub account</li>
-<li><a href="https://icesat-2hackweek.github.io/preliminary/02-JupyterHub-basics">Lesson 2</a>: connecting to our shared cloud computing environment</li>
-<li><a href="https://icesat-2hackweek.github.io/preliminary/03-conda-basics">Lesson 3</a>: installing Python on your laptop</li>
-<li><a href="https://icesat-2hackweek.github.io/preliminary/04-Earthdata">Lesson 4</a>: getting a NASA Earthdata login</li>
+<li><a href="github/">Lesson 1</a>: setting up a GitHub account</li>
+<li><a href="jupyterhub/">Lesson 2</a>: connecting to our shared cloud computing environment</li>
+<li><a href="conda/">Lesson 3</a>: installing Python on your laptop</li>
+<li><a href="earthdata/">Lesson 4</a>: getting a NASA Earthdata login</li>
 </ul>
-<h3 id="how-do-i-ask-questions-about-the-icesat-2-hackweek">How do I ask questions about the ICESat-2 Hackweek</h3>
-<p>If you have technical or general questions about the Hackweek. Please use the General channel on <a href="https://icesat2hackweek2019.slack.com/messages/CDQFBU571/">Slack</a></p>
+<h4 id="learning-python-basics">Learning Python Basics</h4>
+<ul>
+<li>[Lesson 5]</li>
+</ul>
+<h3 id="how-do-i-ask-questions-about-the-hackweek">How do I ask questions about the Hackweek?</h3>
+<p>If you have technical or general questions about the Hackweek. Please use the General channel on <a href="https://icesat2hackweek2020.slack.com/messages/CDQFBU571/">Slack</a></p>
               
             </div>
           </div>
@@ -169,7 +187,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="github/" class="btn btn-neutral float-right" title="Lesson 1">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -199,7 +217,7 @@
       
       
       
-        <span style="margin-left: 15px"><a href="about/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="github/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -212,5 +230,5 @@
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-11-15 17:32:03
+Build Date UTC : 2019-11-15 18:34:43
 -->

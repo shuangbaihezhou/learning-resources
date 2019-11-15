@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>About - hackweek preliminary tutorials</title>
+  <title>Lesson 4 - hackweek preliminary tutorials</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "About";
-    var mkdocs_page_input_path = "about.md";
+    var mkdocs_page_name = "Lesson 4";
+    var mkdocs_page_input_path = "earthdata.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -53,12 +53,37 @@
     <a class="" href="..">Home</a>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../github/">Lesson 1</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../jupyterhub/">Lesson 2</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../conda/">Lesson 3</a>
+	    </li>
+          
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">About</a>
+    <a class="current" href="./">Lesson 4</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#about">About</a></li>
+    <li class="toctree-l2"><a href="#nasa-earthdata-login">NASA Earthdata login</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#overview">Overview</a></li>
+        
+            <li><a class="toctree-l3" href="#why-do-i-need-an-earthdata-login">Why do I need an Earthdata login?</a></li>
+        
+            <li><a class="toctree-l3" href="#getting-an-earthdata-login">Getting an Earthdata login</a></li>
+        
+        </ul>
     
 
     </ul>
@@ -66,7 +91,12 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../numpy/">numpy</a>
+    <a class="" href="../numpy/">Lesson 5</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pandas.md">Lesson 6</a>
 	    </li>
           
         </ul>
@@ -91,10 +121,10 @@
     
       
     
-    <li>About</li>
+    <li>Lesson 4</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/uwescience/hackweek-preliminary-tutorials/edit/master/docs/about.md"
+        <a href="https://github.com/uwescience/hackweek-preliminary-tutorials/edit/master/docs/earthdata.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -104,7 +134,15 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="about">About</h1>
+                <h1 id="nasa-earthdata-login">NASA Earthdata login</h1>
+<h3 id="overview">Overview</h3>
+<p>One of our earliest tutorials involves learning how to download ICESat-2 data directly from NASA's data portals. NASA maintains a number of different portals, but we'll be using the <a href="https://earthdata.nasa.gov/">Earthdata</a> portal. NASA Earthdata provides a convenient web map interface to a wide range of NASA earth observations. The data are stored at one of several Distributed Active Archive Centers (DAACs). We will be accessing ICESat-2 data from the National Snow and Ice Data Center DAAC.</p>
+<h3 id="why-do-i-need-an-earthdata-login">Why do I need an Earthdata login?</h3>
+<p>Each participant will need a login. We will be teaching you ways to programmatically access ICESat-2 data from within your Python scripts. You will need to enter your Earthdata username and password in order for this to work.</p>
+<h3 id="getting-an-earthdata-login">Getting an Earthdata login</h3>
+<p>If you do not already have an Earthdata login, then navigate to the <a href="https://urs.earthdata.nasa.gov/">Earthdata Login</a> page:</p>
+<p><img alt="earthdata-login" src="../img/earthdata-login.png" /></p>
+<p>Enter a username and password, and then record this somewhere for use during the data access tutorial. </p>
               
             </div>
           </div>
@@ -112,10 +150,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../numpy/" class="btn btn-neutral float-right" title="numpy">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../numpy/" class="btn btn-neutral float-right" title="Lesson 5">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../conda/" class="btn btn-neutral" title="Lesson 3"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -143,7 +181,7 @@
           <a href="https://github.com/uwescience/hackweek-preliminary-tutorials/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../conda/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../numpy/" style="color: #fcfcfc">Next &raquo;</a></span>
