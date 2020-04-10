@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Introduction to GitHub - ICESat-2 Hackweek Learning Resources</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Introduction to GitHub";
+    var mkdocs_page_input_path = "tutorials/github.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ICESat-2 Hackweek Learning Resources</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../..">Overview</a>
+  </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Conduct</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../conduct/conduct/">Code of Conduct</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../conduct/community/">Learning Community</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../conduct/etiquette/">Virtual Etiquette</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Logistics</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../logistics/today/">Today's Activitites</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../logistics/schedule/">Hackweek Schedule</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../logistics/technology/">Learning Technologies</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Tutorials</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        Introduction to GitHub
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#what-is-gitgithub">What is Git/GitHub?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#what-if-i-do-not-have-the-git-command-on-my-local-machine">What if I do not have the git command on my local machine?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#why-do-i-need-a-github-account">Why do I need a GitHub account?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#why-are-we-joining-a-github-organization">Why are we joining a GitHub Organization?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#how-should-i-configure-my-github-account">How should I configure my GitHub account?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#how-will-github-repositories-be-structured">How will GitHub repositories be structured?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#how-do-i-learn-more">How do I learn more?</a>
+        </li>
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../conda/">Introduction to Conda</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../numpy/">Introduction to Numpy</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../pandas/">Introduction to Pandas</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Projects</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../projects/project/">Project Roles and Responsibilities</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Reference</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../reference/VocabAcronyms/">Vocabulary and Acronyms</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">About</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../about/howtocontribute/">How to Contribute</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ICESat-2 Hackweek Learning Resources</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Tutorials &raquo;</li>
+        
+      
+    
+    <li>Introduction to GitHub</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/tutorials/github.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="introduction-to-github">Introduction to GitHub</h1>
+<p>Overall introduction</p>
+<hr />
+<h2 id="what-is-gitgithub">What is Git/GitHub?</h2>
+<p><a href="https://git-scm.com/">Git</a> is a popular version control system that is the foundation of most open source software development. You are not required to know Git in advance of this event, but come prepared to learn a lot about it! <a href="https:/github.com">GitHub</a> is a hosting service for Git repositories, enabling us to share code across teams in a web environment.  </p>
+<h2 id="what-if-i-do-not-have-the-git-command-on-my-local-machine">What if I do not have the <code>git</code> command on my local machine?</h2>
+<p>If you don't have Git installed on you local machine, you can download the latest installer on <a href="https://git-scm.com">Git-SCM</a>. More help for the install process can be found in the <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">official Git documentation</a></p>
+<h2 id="why-do-i-need-a-github-account">Why do I need a GitHub account?</h2>
+<p>There are three reasons you are required to have a GitHub account for the hackweek:</p>
+<ol>
+<li>We use GitHub credentialing to give everyone access to our cloud computing resources</li>
+<li>All of our tutorials and project work will be shared on GitHub</li>
+<li>You will want a GitHub account to practice everything you'll be learning during the Git/GitHub tutorials</li>
+</ol>
+<p>So, if you don't already have a GitHub account, just navigate to <a href="https://github.com/">GitHub</a>:</p>
+<p><img alt="github-signup" src="../../img/github-signup.png" /></p>
+<p>Then, click on the big green button and then answer a few required questions. Be sure to save your password somewhere safe because you will need it later!</p>
+<h2 id="why-are-we-joining-a-github-organization">Why are we joining a GitHub Organization?</h2>
+<p>GitHub organizations are a convenient way for teams to get all content relevant to a specific project our workshop into one place. By having everything in one central location you will spend less time searching for hackweek content. GitHub organizations have ``teams'' that offer simple ways to provide respository access to groups of people, rather than individuals.</p>
+<p>We have created a GitHub organization called <a href="https://github.com/icesat-2hackweek">ICESat-2 hackweek</a>. For security purposes you can only join the organization by invitation. Here are the steps:</p>
+<ol>
+<li>Once you have a GitHub ID, send it to Jane Koh on our Slack channel</li>
+<li>We will then find your ID and send you an invitation which should generate an email notification to the email you provided when you signed up for GitHub</li>
+<li>Follow the links in the email to accept the invitation</li>
+</ol>
+<h2 id="how-should-i-configure-my-github-account">How should I configure my GitHub account?</h2>
+<p>As you'll learn in the next lesson, we will use the <a href="https://github.com/icesat-2hackweek">ICESat-2 hackweek</a> GitHub organization as a way to manage access to our cloud computing resources. In order for this to work each person must have public, rather than private membership in the ICESat-2 hackweek organization.</p>
+<p>First, navigate to the "People" tab on the <a href="https://github.com/icesat-2hackweek">ICESat-2 hackweek</a> GitHub organization:</p>
+<p><img alt="people-tab" src="../../img/github_people_image.png" /></p>
+<p>Now, if you see "Private" to the right of your account, you will need to switch this to "Public":</p>
+<p><img alt="private-setting" src="../../img/public-github.png" /></p>
+<p>The steps for doing this are also well documented on <a href="https://help.github.com/en/articles/publicizing-or-hiding-organization-membership">this</a> GitHub help page. </p>
+<h2 id="how-will-github-repositories-be-structured">How will GitHub repositories be structured?</h2>
+<p>When you click on the "Repositories" tab in the <a href="https://github.com/icesat-2hackweek">ICESat-2 hackweek</a> GitHub Organization you will see a list of names, each of which links to a separate GitHub repository:</p>
+<p><img alt="repos-tab" src="../../img/github_whw_repos_image.png" /></p>
+<p>Each repository is a container for a specific subset of material for this event. For example, we have a separate repository for each tutorial. There is a repository for the public-facing website you used to register for this event, and a repository for the wiki page. We'll also create new repositories for each project when we meet in person.</p>
+<h2 id="how-do-i-learn-more">How do I learn more?</h2>
+<p>We encourage you to start practicing with Git and GitHub in advance of this event. Our tutorials will follow <a href="https://berkeley-stat159-f17.github.io/stat159-f17/lectures/01-git/Git-Tutorial..html">this</a> lesson. Additional tutorial content from our past hackweeks is <a href="https://geohackweek.github.io/Introductory/03-git-tutorial/">here</a>. As always, feel free to post questions on
+<a href="https://icesat-2hackweek.slack.com">Slack</a> if you run into any difficulties!</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../conda/" class="btn btn-neutral float-right" title="Introduction to Conda">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../logistics/technology/" class="btn btn-neutral" title="Learning Technologies"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/icesat-2hackweek/learning-resources/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../logistics/technology/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../conda/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
