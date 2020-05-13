@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
+  
   <link rel="shortcut icon" href="../../img/favicon.ico">
   <title>Python installation - ICESat-2 Hackweek Learning Resources</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="../../css/extra.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
   
   <script>
     // Current page data
@@ -26,7 +26,7 @@
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
   <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -37,6 +37,7 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href="../.." class="icon icon-home"> ICESat-2 Hackweek Learning Resources</a>
         <div role="search">
@@ -47,309 +48,87 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="tocbase current">
-    
-    
-      
-
-
-  <li class="navtree toctree-l1 inactive">
-    <a class="" href="../..">Overview</a>
-  </li>
-    
-      
-  <li class="navtree toctree-l1 label">
-    <p class="caption">Conduct</p>
-  </li>
-
-
-  
-
-  
-    <li class="navtree toctree-l1 group">
-      <ul class="navtree subnav-l1 current">
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../conduct/conduct/">Code of Conduct</a>
-  </li>
-        
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../conduct/community/">Learning Community</a>
-  </li>
-        
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../conduct/etiquette/">Virtual Etiquette</a>
-  </li>
-        
-      </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Overview</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Conduct</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../conduct/conduct/">Code of Conduct</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../conduct/community/">Learning Community</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../conduct/etiquette/">Virtual Etiquette</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Logistics</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../logistics/today/">Today's Activitites</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../logistics/schedule/">Hackweek Schedule</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../logistics/technology/">Learning Technologies</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Preliminary Steps</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../github/">GitHub account</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../jupyterhub/">JupyterHub connection</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Python installation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
     </li>
-    
-      
-  <li class="navtree toctree-l1 label">
-    <p class="caption">Logistics</p>
-  </li>
-
-
-  
-
-  
-    <li class="navtree toctree-l1 group">
-      <ul class="navtree subnav-l1 current">
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../logistics/today/">Today's Activitites</a>
-  </li>
-        
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../logistics/schedule/">Hackweek Schedule</a>
-  </li>
-        
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../logistics/technology/">Learning Technologies</a>
-  </li>
-        
-      </ul>
+    <li class="toctree-l2"><a class="reference internal" href="#python-software">Python Software</a>
     </li>
-    
-      
-  <li class="navtree toctree-l1 label">
-    <p class="caption">Preliminary Steps</p>
-  </li>
-
-
-  
-
-  
-    <li class="navtree toctree-l1 group">
-      <ul class="navtree subnav-l1 current">
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../github/">GitHub account</a>
-  </li>
-        
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../jupyterhub/">JupyterHub connection</a>
-  </li>
-        
-          
-
-
-  
-    
-    <li class="navtree toctree-l2 page current">
-      <a class="current" href="./">
-        Python installation
-          <span class="toctree-expand"></span>
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-conda">What is Conda?</a>
     </li>
-    
-      
-
-
-
-  <li class="toctree-l2 current">
-    <ul class="subnav-l2 current">
-    
-      
-        <li class="toctree-l3">
-          <a class="toctree-l4" href="#overview">Overview</a>
-        </li>
-    
-      
-        <li class="toctree-l3">
-          <a class="toctree-l4" href="#python-software">Python Software</a>
-        </li>
-    
-      
-        <li class="toctree-l3">
-          <a class="toctree-l4" href="#what-is-conda">What is Conda?</a>
-        </li>
-    
-      
-          
-
-  <li class="toctree-l3">
-    <a href="#installing-miniconda">
-      Installing Miniconda
-      <span class="toctree-expand"></span>
-    </a>
-  </li>
-
-
-
-  <li class="toctree-l3">
-    <ul class="subnav-l3 toc-hidden">
-    
-      
-        <li class="toctree-l4">
-          <a class="toctree-l5" href="#windows">Windows</a>
-        </li>
-    
-      
-        <li class="toctree-l4">
-          <a class="toctree-l5" href="#linux-and-os-x">Linux and OS X</a>
-        </li>
-    
+    <li class="toctree-l2"><a class="reference internal" href="#installing-miniconda">Installing Miniconda</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#windows">Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#linux-and-os-x">Linux and OS X</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installing-anaconda-optional">Installing Anaconda (Optional)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installing-python">Installing Python</a>
+    </li>
     </ul>
-  </li>
-
-      
-    
-      
-        <li class="toctree-l3">
-          <a class="toctree-l4" href="#installing-anaconda-optional">Installing Anaconda (Optional)</a>
-        </li>
-    
-      
-        <li class="toctree-l3">
-          <a class="toctree-l4" href="#installing-python">Installing Python</a>
-        </li>
-    
-    </ul>
-  </li>
-
-
-  
-        
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../earthdata/">Earthdata login</a>
-  </li>
-        
-      </ul>
-    </li>
-    
-      
-  <li class="navtree toctree-l1 label">
-    <p class="caption">Tutorials</p>
-  </li>
-
-
-  
-
-  
-    <li class="navtree toctree-l1 group">
-      <ul class="navtree subnav-l1 current">
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../tutorials/github/">Introduction to GitHub</a>
-  </li>
-        
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../tutorials/jupyter/">Introduction to Jupyter</a>
-  </li>
-        
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../tutorials/numpy/">Introduction to Numpy</a>
-  </li>
-        
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../tutorials/pandas/">Introduction to Pandas</a>
-  </li>
-        
-      </ul>
-    </li>
-    
-      
-  <li class="navtree toctree-l1 label">
-    <p class="caption">Projects</p>
-  </li>
-
-
-  
-
-  
-    <li class="navtree toctree-l1 group">
-      <ul class="navtree subnav-l1 current">
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../projects/project/">Project Roles and Responsibilities</a>
-  </li>
-        
-      </ul>
-    </li>
-    
-      
-  <li class="navtree toctree-l1 label">
-    <p class="caption">Reference</p>
-  </li>
-
-
-  
-
-  
-    <li class="navtree toctree-l1 group">
-      <ul class="navtree subnav-l1 current">
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../reference/VocabAcronyms/">Vocabulary and Acronyms</a>
-  </li>
-        
-      </ul>
-    </li>
-    
-      
-  <li class="navtree toctree-l1 label">
-    <p class="caption">About</p>
-  </li>
-
-
-  
-
-  
-    <li class="navtree toctree-l1 group">
-      <ul class="navtree subnav-l1 current">
-          
-
-
-  <li class="navtree toctree-l2 inactive">
-    <a class="" href="../../about/howtocontribute/">How to Contribute</a>
-  </li>
-        
-      </ul>
-    </li>
-    
-  </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../earthdata/">Earthdata login</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tutorials</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/github/">Introduction to GitHub</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/jupyter/">Introduction to Jupyter</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/numpy/">Introduction to Numpy</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/pandas/">Introduction to Pandas</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Projects</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../projects/project/">Project Roles and Responsibilities</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Reference</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../reference/VocabAcronyms/">Vocabulary and Acronyms</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">About</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about/howtocontribute/">How to Contribute</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -381,6 +160,7 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
@@ -468,7 +248,7 @@ Python 3.7.3|Anaconda custom (x86_64)| (default, Mar 27 2019, 22:11:17)
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -478,7 +258,7 @@ Python 3.7.3|Anaconda custom (x86_64)| (default, Mar 27 2019, 22:11:17)
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
           <a href="https://github.com/icesat-2hackweek/learning-resources/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
@@ -494,6 +274,11 @@ Python 3.7.3|Anaconda custom (x86_64)| (default, Mar 27 2019, 22:11:17)
     <script>var base_url = '../..';</script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>
