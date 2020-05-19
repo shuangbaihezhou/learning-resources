@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Earthdata login - ICESat-2 Hackweek Learning Resources</title>
+  <title>Getting Started - ICESat-2 Hackweek Learning Resources</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Earthdata login";
-    var mkdocs_page_input_path = "preliminary/earthdata.md";
+    var mkdocs_page_name = "Getting Started";
+    var mkdocs_page_input_path = "tutorials/getting_started.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -98,35 +98,19 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../github/">GitHub account</a>
+    <a class="" href="../../preliminary/github/">GitHub account</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../jupyterhub/">JupyterHub connection</a>
+    <a class="" href="../../preliminary/jupyterhub/">JupyterHub connection</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../conda/">Python installation</a>
+    <a class="" href="../../preliminary/conda/">Python installation</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Earthdata login</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#earthdata-login">Earthdata Login</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#overview">Overview</a></li>
-        
-            <li><a class="toctree-l4" href="#why-do-i-need-an-earthdata-login">Why do I need an Earthdata login?</a></li>
-        
-            <li><a class="toctree-l4" href="#getting-an-earthdata-login">Getting an Earthdata login</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../../preliminary/earthdata/">Earthdata login</a>
                 </li>
     </ul>
 	    </li>
@@ -135,21 +119,35 @@
 		
     <span class="caption-text">Tutorials</span>
     <ul class="subnav">
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../../tutorials/getting_started/">Getting Started</a>
+    <a class="current" href="./">Getting Started</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#getting-started-on-a-tutorial">Getting started on a tutorial</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#start-pangeo-in-your-browser">Start Pangeo in your browser</a></li>
+        
+            <li><a class="toctree-l4" href="#get-a-local-copy-of-the-tutorial-and-follow-along">Get a local copy of the tutorial and follow along</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../tutorials/github/">Introduction to GitHub</a>
+    <a class="" href="../github/">Introduction to GitHub</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../tutorials/jupyter/">Introduction to Jupyter</a>
+    <a class="" href="../jupyter/">Introduction to Jupyter</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../tutorials/python/">Introduction to Python</a>
+    <a class="" href="../python/">Introduction to Python</a>
                 </li>
     </ul>
 	    </li>
@@ -213,14 +211,14 @@
     
       
         
-          <li>Preliminary Steps &raquo;</li>
+          <li>Tutorials &raquo;</li>
         
       
     
-    <li>Earthdata login</li>
+    <li>Getting Started</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/preliminary/earthdata.md"
+        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/tutorials/getting_started.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -230,15 +228,60 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="earthdata-login">Earthdata Login</h1>
-<h3 id="overview">Overview</h3>
-<p>One of our earliest tutorials involves learning how to download ICESat-2 data directly from NASA's data portals. NASA maintains a number of different portals, but we'll be using the <a href="https://earthdata.nasa.gov/">Earthdata</a> portal. NASA Earthdata provides a convenient web map interface to a wide range of NASA earth observations. The data are stored at one of several Distributed Active Archive Centers (DAACs). We will be accessing ICESat-2 data from the National Snow and Ice Data Center DAAC.</p>
-<h3 id="why-do-i-need-an-earthdata-login">Why do I need an Earthdata login?</h3>
-<p>Each participant will need a login. We will be teaching you ways to programmatically access ICESat-2 data from within your Python scripts. You will need to enter your Earthdata username and password in order for this to work.</p>
-<h3 id="getting-an-earthdata-login">Getting an Earthdata login</h3>
-<p>If you do not already have an Earthdata login, then navigate to the <a href="https://urs.earthdata.nasa.gov/">Earthdata Login</a> page:</p>
-<p><img alt="earthdata-login" src="../../img/earthdata-login.png" /></p>
-<p>Enter a username and password, and then record this somewhere for use during the data access tutorial. </p>
+                <h1 id="getting-started-on-a-tutorial">Getting started on a tutorial</h1>
+<p>These are instructions for getting a tutorial started on Pangeo (in your browser) and saving changes to your copy of a tutorial.</p>
+<h2 id="start-pangeo-in-your-browser">Start Pangeo in your browser</h2>
+<h4 id="step-1">Step 1</h4>
+<p>Navigate to the <a href="http://icesat-2.hackweek.io/">Pangeo JupyterHub for ICESat-2 Hackweek 2020</a>.</p>
+<h4 id="step-2">Step 2</h4>
+<p>Sign in using your GitHub account, if you are not already signed in. (First time only: Grant the ICESat-2 Hackweek Organization permissions - this grants you access to the Pangeo computing environment for the Hackweek.)</p>
+<h4 id="step-3">Step 3</h4>
+<p>Start the Pangeo computing environement. It may take a few moments to start up.</p>
+<h2 id="get-a-local-copy-of-the-tutorial-and-follow-along">Get a local copy of the tutorial and follow along</h2>
+<p>This basic workflow allows you to follow along with tutorials and save changes to your fork while staying up-to-date with any changes made to the master tutorial.</p>
+<h4 id="step-1_1">Step 1</h4>
+<p>Navigate to the tutorial repository on <a href="https://github.com/ICESAT-2HackWeek">GitHub</a>.</p>
+<p>Fork the tutorial repository to your personal GitHub account via the GitHub web user interface.</p>
+<p>For example, https://github.com/friedrichknuth/geospatial-analysis 
+forked from https://github.com/ICESAT-2HackWeek/geospatial-analysis.</p>
+<h4 id="step-2_1">Step 2</h4>
+<p>Clone the forked tutorial to your machine/Pangeo environment. You can easily copy the link to a repository by selecting the green "clone or download" dropdown and hitting the clipboard icon, which will automatically copy the link for you.</p>
+<p>Open a terminal (using the "plus" sign in your Pangeo JupyterHub) and execute:</p>
+<pre><code>$ git clone https://github.com/friedrichknuth/geospatial-analysis.git
+$ cd geospatial-analysis  
+</code></pre>
+
+<p><em>Note: a more detailed version of step 2, including images, is available as part of the <a href="https://icesat-2hackweek.github.io/learning-resources/preliminary/jupyterhub/#how-do-i-get-my-code-in-and-out-of-pangeo">Preliminary Steps - JupyterHub Connection</a>.</em></p>
+<h4 id="step-3_1">Step 3</h4>
+<p>Add the upstream master (a link to the tutorial repository you forked) so we can stay up to date with any changes made to the main tutorial.</p>
+<pre><code>$ git remote add upstream https://github.com/ICESAT-2HackWeek/geospatial-analysis.git
+</code></pre>
+
+<h4 id="step-4">Step 4</h4>
+<p>Fetch and merge the latest changes from upstream master.</p>
+<pre><code>$ git fetch upstream
+$ git merge upstream/master
+</code></pre>
+
+<h4 id="step-5">Step 5</h4>
+<p>Checkout a branch to make changes and follow along with the tutorial.</p>
+<pre><code>$ git checkout -b branch_name  
+</code></pre>
+
+<h4 id="step-6">Step 6</h4>
+<p>Follow along with the tutorial. You are welcome to make changes and notes as you go, and these will be saved to your forked copy in the next step.</p>
+<h4 id="step-7">Step 7</h4>
+<p>Commit your changes and push them up to your fork, under your branch.</p>
+<pre><code>$ git commit -am &quot;A short commit message noting what you have changed here&quot;  
+$ git push origin branch_name  
+</code></pre>
+
+<p>Now your fork will have your changes backed up to GitHub under your branch.</p>
+<p>If additional changes were made to the upstream master tutorial, you can checkout the master branch <code>$ git checkout master</code> and repeat step 4 to get the latest content, then checkout a new branch with a different name and follow along from there.</p>
+<p><strong><em> Please note: the Pangeo JupyterHub you are using for this Hackweek should not be relied upon to save your changes, and will be removed a few weeks after the Hackweek. Thus, you MUST complete Step 7 to push the changes to your GitHub fork of the tutorial if you would like to have continued access to any tutorial notes or changes you made. </em></strong></p>
+<hr />
+<p>Adapted from https://github.com/ICESAT-2HackWeek/topohack/wiki/Git-workflow-for-tutorials
+Originally from https://medium.com/sweetmeat/how-to-keep-a-downstream-git-repository-current-with-upstream-repository-changes-10b76fad6d97</p>
               
             </div>
           </div>
@@ -246,10 +289,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../tutorials/getting_started/" class="btn btn-neutral float-right" title="Getting Started">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../github/" class="btn btn-neutral float-right" title="Introduction to GitHub">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../conda/" class="btn btn-neutral" title="Python installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../preliminary/earthdata/" class="btn btn-neutral" title="Earthdata login"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -277,10 +320,10 @@
           <a href="https://github.com/icesat-2hackweek/learning-resources/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../conda/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../preliminary/earthdata/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../tutorials/getting_started/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../github/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

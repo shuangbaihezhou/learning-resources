@@ -7,15 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  
   <link rel="shortcut icon" href="../../img/favicon.ico">
   <title>JupyterHub connection - ICESat-2 Hackweek Learning Resources</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="../../css/theme.css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  <link href="../../css/extra.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -26,7 +25,7 @@
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
   <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -37,7 +36,6 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href="../.." class="icon icon-home"> ICESat-2 Hackweek Learning Resources</a>
         <div role="search">
@@ -48,77 +46,158 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../..">Overview</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Conduct</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../conduct/conduct/">Code of Conduct</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../conduct/community/">Learning Community</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../conduct/etiquette/">Virtual Etiquette</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Logistics</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../logistics/today/">Today's Activitites</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../logistics/schedule/">Hackweek Schedule</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../logistics/technology/">Learning Technologies</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Preliminary Steps</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../github/">GitHub account</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">JupyterHub connection</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#why-are-we-using-a-shared-cloud-environment">Why are we using a shared cloud environment?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-do-i-access-the-shared-cloud-environment">How do I access the shared cloud environment?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#what-is-pangeo-and-how-is-this-system-configured">What is Pangeo and how is this system configured?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-do-i-get-my-code-in-and-out-of-pangeo">How do I get my code in and out of Pangeo?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-do-i-end-my-pangeo-session-will-i-lose-all-of-my-work">How do I end my Pangeo session? Will I lose all of my work?</a>
-    </li>
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Overview</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Conduct</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../conduct/conduct/">Code of Conduct</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../conduct/community/">Learning Community</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../conduct/etiquette/">Virtual Etiquette</a>
+                </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../conda/">Python installation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../earthdata/">Earthdata login</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Tutorials</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/github/">Introduction to GitHub</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/jupyter/">Introduction to Jupyter</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/python/">Introduction to Python</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Projects</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../projects/project/">Project Roles and Responsibilities</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Reference</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../reference/VocabAcronyms/">Vocabulary and Acronyms</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">About</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../about/howtocontribute/">How to Contribute</a>
-                    </li>
-                </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Logistics</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../logistics/today/">Today's Activitites</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../logistics/schedule/">Hackweek Schedule</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../logistics/technology/">Learning Technologies</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Preliminary Steps</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../github/">GitHub account</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">JupyterHub connection</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#jupyterhub-connection">JupyterHub Connection</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#why-are-we-using-a-shared-cloud-environment">Why are we using a shared cloud environment?</a></li>
+        
+            <li><a class="toctree-l4" href="#how-do-i-access-the-shared-cloud-environment">How do I access the shared cloud environment?</a></li>
+        
+            <li><a class="toctree-l4" href="#what-is-pangeo-and-how-is-this-system-configured">What is Pangeo and how is this system configured?</a></li>
+        
+            <li><a class="toctree-l4" href="#how-do-i-get-my-code-in-and-out-of-pangeo">How do I get my code in and out of Pangeo?</a></li>
+        
+            <li><a class="toctree-l4" href="#how-do-i-end-my-pangeo-session-will-i-lose-all-of-my-work">How do I end my Pangeo session? Will I lose all of my work?</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../conda/">Python installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../earthdata/">Earthdata login</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../tutorials/getting_started/">Getting Started</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tutorials/github/">Introduction to GitHub</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tutorials/jupyter/">Introduction to Jupyter</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tutorials/python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../projects/project/">Project Roles and Responsibilities</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../projects/example_workflow/">Project Example Workflow and Data</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Reference</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../reference/VocabAcronyms/">Vocabulary and Acronyms</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">About</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../about/howtocontribute/">How to Contribute</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
       </div>
-    </div>
+      &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -150,7 +229,6 @@
       
     </li>
   </ul>
-  
   <hr/>
 </div>
           <div role="main">
@@ -173,9 +251,9 @@
 <p><a href="https://pangeo.io">Pangeo</a> is a community of researchers building open, reproducible and scalable scientific software tools. Several of us are involved in projects with NASA and NSF to build prototype systems to enable data discovery in the era of expanding data volume and complexity.</p>
 <p>For this hackweek, we have created virtual computing instances on Amazon Web Services that can be deployed on demand in a parallel computing environment. We use JupyterHub as a way to give a Jupyter Notebook server to each person in a group. <a href="https://www.slideshare.net/willingc/jupyterhub-a-thing-explainer-overview?from_action=save">These slides</a> give a nice overview of what JupyterHub is all about. We use JupyterHub in an educational setting because it enables us to quickly begin working with code without spending time to get the necessary libraries and dependencies set up on everyone's individual computers.</p>
 <h3 id="how-do-i-get-my-code-in-and-out-of-pangeo">How do I get my code in and out of Pangeo?</h3>
-<p>When you start your own instance of Pangeo you will have access to your own virtual drive space. No other Pangeo users will be able to see or access your data files. Next we will explain how you can upload files to your virtual drive space and how to save files from Pangeo back to another location, such as GitHub or your own local laptop drive.</p>
-<p>First we'll show you how to pull some files from GitHub into your virtual drive space.  This will be a common task during the hackweek: at the start of each tutorial we'll ask you to "clone" (make a copy of) the GitHub repository corresponding to the specific tutorial being taught into your Pangeo drive space.</p>
-<p>To do this, we will need to interface with the file system of Pangeo. Pangeo is deployed in a Linux operating system and we will need to open a terminal within Pangeo to manage our files. There are two ways to do this: (1) Navigate to the "File" menu, choose "New" and then "Terminal" or (2) click on the "terminal" button in JupyterLab: </p>
+<p>When you start your own instance of Pangeo you will have access to your own virtual drive space. No other Pangeo users will be able to see or access your data files. You can easily upload files to your virtual drive space and save files from Pangeo back to another location, such as GitHub or your own local laptop drive.</p>
+<p>Here we'll show you how to pull (copy) some files from GitHub into your virtual drive space using git. This will be a common task during the hackweek: at the start of each tutorial we'll ask you to "fork" (create your own copy of in your GitHub account) and "clone" (make a copy of in a computing environment, such as your local computer or Pangeo instance) the GitHub repository corresponding to the specific tutorial being taught into your Pangeo drive space.</p>
+<p>To clone (copy) a code repository from GitHub, we will need to interface with the file system of Pangeo. Pangeo is deployed in a Linux operating system and we will need to open a terminal within Pangeo to manage our files. There are two ways to do this: (1) Navigate to the "File" menu, choose "New" and then "Terminal" or (2) click on the "terminal" button in JupyterLab: </p>
 <p><img alt="terminal-button" src="../../img/terminal-button.png" /></p>
 <p>This will open a new terminal tab in your JupyterLab interface:</p>
 <p><img alt="terminal-tab" src="../../img/terminal.png" /></p>
@@ -190,7 +268,9 @@
 </div>
 <p>After issuing the Git clone command you should see something like this:</p>
 <p><img alt="clone-result" src="../../img/clone-result.png" /></p>
-<p><br>
+<p>You may also upload files from your local system using the upload button (up-pointing arrow) on the top left of the JupyterHub navigation panel. Similarly, you may download files to your local system by right-clicking the file and selecting download (down-pointing arrow).</p>
+<p>Simple, example GitHub/git/local-workspace workflows for getting a tutorial started in your Pangeo instance and working on a group project are provided. The <a href="https://icesat-2hackweek.github.io/learning-resources/tutorials/getting_started">getting started on a tutorial</a> workflow briefly reviews much of the information in this preliminary exercise along with steps for making and saving notes or other changes as you work through the tutorial and keeping it updated with the original, master copy. The <a href="https://icesat-2hackweek.github.io/learning-resources/projects/example_workflow">basic git workflow for a project</a> serves as a reminder of the git workflow for working on a group project while minimizing code conflicts that could result from multiple people making changes to the same files simultaneously.
+<br>
 <br></p>
 <h3 id="how-do-i-end-my-pangeo-session-will-i-lose-all-of-my-work">How do I end my Pangeo session? Will I lose all of my work?</h3>
 <p>When you are finished working for the day it is important to explicitly log out of your Pangeo session. The reason for this is it will save us a bit of money! When you keep a session active it uses up AWS resources and keeps a series of virtual machines deployed. </p>
@@ -223,7 +303,7 @@
     
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -233,7 +313,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
           <a href="https://github.com/icesat-2hackweek/learning-resources/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
@@ -249,11 +329,6 @@
     <script>var base_url = '../..';</script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
 
 </body>
 </html>

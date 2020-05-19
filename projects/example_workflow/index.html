@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Earthdata login - ICESat-2 Hackweek Learning Resources</title>
+  <title>Project Example Workflow and Data - ICESat-2 Hackweek Learning Resources</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Earthdata login";
-    var mkdocs_page_input_path = "preliminary/earthdata.md";
+    var mkdocs_page_name = "Project Example Workflow and Data";
+    var mkdocs_page_input_path = "projects/example_workflow.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -98,35 +98,19 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../github/">GitHub account</a>
+    <a class="" href="../../preliminary/github/">GitHub account</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../jupyterhub/">JupyterHub connection</a>
+    <a class="" href="../../preliminary/jupyterhub/">JupyterHub connection</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../conda/">Python installation</a>
+    <a class="" href="../../preliminary/conda/">Python installation</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Earthdata login</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#earthdata-login">Earthdata Login</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#overview">Overview</a></li>
-        
-            <li><a class="toctree-l4" href="#why-do-i-need-an-earthdata-login">Why do I need an Earthdata login?</a></li>
-        
-            <li><a class="toctree-l4" href="#getting-an-earthdata-login">Getting an Earthdata login</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../../preliminary/earthdata/">Earthdata login</a>
                 </li>
     </ul>
 	    </li>
@@ -160,11 +144,32 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../projects/project/">Project Roles and Responsibilities</a>
+    <a class="" href="../project/">Project Roles and Responsibilities</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../../projects/example_workflow/">Project Example Workflow and Data</a>
+    <a class="current" href="./">Project Example Workflow and Data</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#basic-git-workflow-for-a-project">Basic git workflow for a project</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#first-time-only-clone-your-project-into-your-local-working-environment">First time only - clone your project into your local working environment</a></li>
+        
+            <li><a class="toctree-l4" href="#each-time-you-begin-working">Each time you begin working</a></li>
+        
+            <li><a class="toctree-l4" href="#make-changes-or-add-new-files-locally-and-put-them-on-github">Make changes or add new files locally and put them on GitHub</a></li>
+        
+            <li><a class="toctree-l4" href="#clean-up-your-local-repository-after-successful-merge-of-pull-request">Clean up your local repository (after successful merge of pull request)</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#project-data-download-storage-and-access">Project Data - download, storage, and access</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -213,14 +218,14 @@
     
       
         
-          <li>Preliminary Steps &raquo;</li>
+          <li>Projects &raquo;</li>
         
       
     
-    <li>Earthdata login</li>
+    <li>Project Example Workflow and Data</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/preliminary/earthdata.md"
+        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/projects/example_workflow.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -230,15 +235,63 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="earthdata-login">Earthdata Login</h1>
-<h3 id="overview">Overview</h3>
-<p>One of our earliest tutorials involves learning how to download ICESat-2 data directly from NASA's data portals. NASA maintains a number of different portals, but we'll be using the <a href="https://earthdata.nasa.gov/">Earthdata</a> portal. NASA Earthdata provides a convenient web map interface to a wide range of NASA earth observations. The data are stored at one of several Distributed Active Archive Centers (DAACs). We will be accessing ICESat-2 data from the National Snow and Ice Data Center DAAC.</p>
-<h3 id="why-do-i-need-an-earthdata-login">Why do I need an Earthdata login?</h3>
-<p>Each participant will need a login. We will be teaching you ways to programmatically access ICESat-2 data from within your Python scripts. You will need to enter your Earthdata username and password in order for this to work.</p>
-<h3 id="getting-an-earthdata-login">Getting an Earthdata login</h3>
-<p>If you do not already have an Earthdata login, then navigate to the <a href="https://urs.earthdata.nasa.gov/">Earthdata Login</a> page:</p>
-<p><img alt="earthdata-login" src="../../img/earthdata-login.png" /></p>
-<p>Enter a username and password, and then record this somewhere for use during the data access tutorial. </p>
+                <h1 id="basic-git-workflow-for-a-project">Basic git workflow for a project</h1>
+<p>Here we suggest a basic git workflow for working on your group project. Combined with our example project template and good communication, this workflow should help minimize conflicts on your GitHub project repo.</p>
+<h3 id="first-time-only-clone-your-project-into-your-local-working-environment">First time only - clone your project into your local working environment</h3>
+<pre><code>$ git clone https://github.com/ICESAT-2HackWeek/&lt;project-repo-name&gt;.git 
+</code></pre>
+
+<p>Where the <code>&lt;project-repo-name&gt;</code> is the unique name of your project repository.</p>
+<h3 id="each-time-you-begin-working">Each time you begin working</h3>
+<p>Navigate to your project directory:</p>
+<pre><code>$ cd &lt;project-repo-name&gt; 
+</code></pre>
+
+<p>Now, check in with your team: has there been any new work pushed to GitHub? If so, you will need to pull remote changes to your master branch:</p>
+<pre><code>$ git fetch
+$ git pull origin master:master
+</code></pre>
+
+<p>Next, checkout your working branch. Use the <code>-b</code> option if you are beginning work and need to create a new branch:</p>
+<pre><code>$ git checkout [-b] &lt;branch-name&gt;  
+</code></pre>
+
+<p>Here <code>&lt;branch-name&gt;</code> is an arbitrary name identifying this branch of work. </p>
+<h3 id="make-changes-or-add-new-files-locally-and-put-them-on-github">Make changes or add new files locally and put them on GitHub</h3>
+<pre><code>$ git add new_file #if adding a new file 
+$ git status #to see which files have been added or modified and are ready (staged) for committing
+$ git commit -am &quot;brief description of your changes (commit message)&quot;  
+$ git push origin branch_name  
+</code></pre>
+
+<p>Complete pull request and merge with master via GitHub UI. </p>
+<h3 id="clean-up-your-local-repository-after-successful-merge-of-pull-request">Clean up your local repository (after successful merge of pull request)</h3>
+<p>Switch back to the master branch. </p>
+<pre><code>$ git checkout master
+</code></pre>
+
+<p>Confirm that you are on the master branch. </p>
+<pre><code>$ git branch
+</code></pre>
+
+<p>Delete the branch containing the changes you just merged. This will delete it on GitHub (remote, if you did not click the "delete branch" button after merging). </p>
+<pre><code>$ git push origin --delete branch_name
+</code></pre>
+
+<p>You need to also delete the local version of your branch.</p>
+<pre><code>$ git branch -d branch_name
+</code></pre>
+
+<p>Finally, git pull all the latest changes (yours and others) to your local master branch. </p>
+<pre><code>$ git pull
+</code></pre>
+
+<p><em>When you are ready to do more work, checkout another branch and repeat.</em>  </p>
+<h1 id="project-data-download-storage-and-access">Project Data - download, storage, and access</h1>
+<p>Transferring and storing large amounts of data is expensive. Rather than each project team member downloading their own copy of the data, we encourage teams to have one member download the data to a shared project directory (and make sure the code to get the data is shared on the group's project repo) that everyone can access from the Hackweek's Pangeo JupyterHub.</p>
+<p>The file system can be accessed in the same manner as any other drive with a directory/file structure. The name of the file system is <code>/srv/shared/projects/</code>, and you should create a directory for your team's data (which may then also have subdirectories).</p>
+<hr />
+<p>Adapted from https://github.com/ICESAT-2HackWeek/topohack/wiki/Git-workflow-for-team</p>
               
             </div>
           </div>
@@ -246,10 +299,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../tutorials/getting_started/" class="btn btn-neutral float-right" title="Getting Started">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../reference/VocabAcronyms/" class="btn btn-neutral float-right" title="Vocabulary and Acronyms">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../conda/" class="btn btn-neutral" title="Python installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../project/" class="btn btn-neutral" title="Project Roles and Responsibilities"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -277,10 +330,10 @@
           <a href="https://github.com/icesat-2hackweek/learning-resources/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../conda/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../project/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../tutorials/getting_started/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../reference/VocabAcronyms/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
