@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>JupyterHub connection - ICESat-2 Hackweek Learning Resources</title>
+  <title>JupyterHub Connection - ICESat-2 Hackweek Learning Resources</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "JupyterHub connection";
-    var mkdocs_page_input_path = "preliminary/jupyterhub.md";
+    var mkdocs_page_name = "JupyterHub Connection";
+    var mkdocs_page_input_path = "preliminary/jupyterhub-fork+clone.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -100,29 +100,9 @@
                     
     <a class="" href="../github/">GitHub account</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">JupyterHub connection</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#jupyterhub-connection">JupyterHub Connection</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#why-are-we-using-a-shared-cloud-environment">Why are we using a shared cloud environment?</a></li>
-        
-            <li><a class="toctree-l4" href="#how-do-i-access-the-shared-cloud-environment">How do I access the shared cloud environment?</a></li>
-        
-            <li><a class="toctree-l4" href="#what-is-pangeo-and-how-is-this-system-configured">What is Pangeo and how is this system configured?</a></li>
-        
-            <li><a class="toctree-l4" href="#how-do-i-get-my-code-in-and-out-of-pangeo">How do I get my code in and out of Pangeo?</a></li>
-        
-            <li><a class="toctree-l4" href="#how-do-i-end-my-pangeo-session-will-i-lose-all-of-my-work">How do I end my Pangeo session? Will I lose all of my work?</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../jupyterhub/">JupyterHub connection</a>
                 </li>
                 <li class="">
                     
@@ -220,15 +200,11 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Preliminary Steps &raquo;</li>
-        
-      
     
-    <li>JupyterHub connection</li>
+    <li>JupyterHub Connection</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/preliminary/jupyterhub.md"
+        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/preliminary/jupyterhub-fork+clone.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -257,7 +233,7 @@
 <p>For this hackweek, we have created virtual computing instances on Amazon Web Services that can be deployed on demand in a parallel computing environment. We use JupyterHub as a way to give a Jupyter Notebook server to each person in a group. <a href="https://www.slideshare.net/willingc/jupyterhub-a-thing-explainer-overview?from_action=save">These slides</a> give a nice overview of what JupyterHub is all about. We use JupyterHub in an educational setting because it enables us to quickly begin working with code without spending time to get the necessary libraries and dependencies set up on everyone's individual computers.</p>
 <h3 id="how-do-i-get-my-code-in-and-out-of-pangeo">How do I get my code in and out of Pangeo?</h3>
 <p>When you start your own instance of Pangeo you will have access to your own virtual drive space. No other Pangeo users will be able to see or access your data files. You can easily upload files to your virtual drive space and save files from Pangeo back to another location, such as GitHub or your own local laptop drive.</p>
-<p>Here we'll show you how to pull (copy) some files from GitHub into your virtual drive space using git. This will be a common task during the hackweek: at the start of each tutorial we'll ask you to "clone" (make a copy of in a computing environment, such as your local computer or Pangeo instance) into your Pangeo drive space the GitHub repository corresponding to the specific tutorial being taught.</p>
+<p>Here we'll show you how to pull (copy) some files from GitHub into your virtual drive space using git. This will be a common task during the hackweek: at the start of each tutorial we'll ask you to "fork" (create your own copy of in your GitHub account) and "clone" (make a copy of in a computing environment, such as your local computer or Pangeo instance) the GitHub repository corresponding to the specific tutorial being taught into your Pangeo drive space.</p>
 <p>To clone (copy) a code repository from GitHub, we will need to interface with the file system of Pangeo. Pangeo is deployed in a Linux operating system and we will need to open a terminal within Pangeo to manage our files. There are two ways to do this: (1) Navigate to the "File" menu, choose "New" and then "Terminal" or (2) click on the "terminal" button in JupyterLab: </p>
 <p><img alt="terminal-button" src="../../img/terminal-button.png" /></p>
 <p>This will open a new terminal tab in your JupyterLab interface:</p>
@@ -274,7 +250,7 @@
 <p>After issuing the Git clone command you should see something like this:</p>
 <p><img alt="clone-result" src="../../img/clone-result.png" /></p>
 <p>You may also upload files from your local system using the upload button (up-pointing arrow) on the top left of the JupyterHub navigation panel. Similarly, you may download files to your local system by right-clicking the file and selecting download (down-pointing arrow).</p>
-<p>Simple, example GitHub/git/local-workspace workflows for getting a tutorial started in your Pangeo instance and working on a group project are provided. The <a href="https://icesat-2hackweek.github.io/learning-resources/tutorials/getting_started">getting started on a tutorial</a> workflow briefly reviews much of the information in this preliminary exercise along with steps for keeping the tutorial updated with the original, master copy. The <a href="https://icesat-2hackweek.github.io/learning-resources/projects/example_workflow">basic git workflow for a project</a> serves as a reminder of the git workflow for working on a group project while minimizing code conflicts that could result from multiple people making changes to the same files simultaneously.
+<p>Simple, example GitHub/git/local-workspace workflows for getting a tutorial started in your Pangeo instance and working on a group project are provided. The <a href="https://icesat-2hackweek.github.io/learning-resources/tutorials/getting_started">getting started on a tutorial</a> workflow briefly reviews much of the information in this preliminary exercise along with steps for making and saving notes or other changes as you work through the tutorial and keeping it updated with the original, master copy. The <a href="https://icesat-2hackweek.github.io/learning-resources/projects/example_workflow">basic git workflow for a project</a> serves as a reminder of the git workflow for working on a group project while minimizing code conflicts that could result from multiple people making changes to the same files simultaneously.
 <br>
 <br></p>
 <h3 id="how-do-i-end-my-pangeo-session-will-i-lose-all-of-my-work">How do I end my Pangeo session? Will I lose all of my work?</h3>
@@ -289,15 +265,6 @@
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../conda/" class="btn btn-neutral float-right" title="Python installation">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../github/" class="btn btn-neutral" title="GitHub account"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -323,10 +290,6 @@
           <a href="https://github.com/icesat-2hackweek/learning-resources/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../github/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../conda/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

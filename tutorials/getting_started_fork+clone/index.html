@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Introduction to Python - ICESat-2 Hackweek Learning Resources</title>
+  <title>Getting started on a tutorial - ICESat-2 Hackweek Learning Resources</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Introduction to Python";
-    var mkdocs_page_input_path = "tutorials/python.md";
+    var mkdocs_page_name = "Getting started on a tutorial";
+    var mkdocs_page_input_path = "tutorials/getting_started_fork+clone.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -131,15 +131,9 @@
                     
     <a class="" href="../jupyter/">Introduction to Jupyter</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Introduction to Python</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#introduction-to-python">Introduction to Python</a></li>
-    
-
-    </ul>
+    <a class="" href="../python/">Introduction to Python</a>
                 </li>
     </ul>
 	    </li>
@@ -206,15 +200,11 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Tutorials &raquo;</li>
-        
-      
     
-    <li>Introduction to Python</li>
+    <li>Getting started on a tutorial</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/tutorials/python.md"
+        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/tutorials/getting_started_fork+clone.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -224,22 +214,64 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="introduction-to-python">Introduction to Python</h1>
-<p>This lesson provides an introduction to numpy, matplotlib, Pandas and geopandas. </p>
-<p>This tutorial is in development and this page is being continually updated. </p>
+                <h1 id="getting-started-on-a-tutorial">Getting started on a tutorial</h1>
+<p>These are instructions for getting a tutorial started on Pangeo (in your browser) and saving changes to your copy of a tutorial.</p>
+<h2 id="start-pangeo-in-your-browser">Start Pangeo in your browser</h2>
+<h4 id="step-1">Step 1</h4>
+<p>Navigate to the <a href="http://icesat-2.hackweek.io/">Pangeo JupyterHub for ICESat-2 Hackweek 2020</a>.</p>
+<h4 id="step-2">Step 2</h4>
+<p>Sign in using your GitHub account, if you are not already signed in. (First time only: Grant the ICESat-2 Hackweek Organization permissions - this grants you access to the Pangeo computing environment for the Hackweek.)</p>
+<h4 id="step-3">Step 3</h4>
+<p>Start the Pangeo computing environement. It may take a few moments to start up.</p>
+<h2 id="get-a-local-copy-of-the-tutorial-and-follow-along">Get a local copy of the tutorial and follow along</h2>
+<p>This basic workflow allows you to follow along with tutorials and save changes to your fork while staying up-to-date with any changes made to the master tutorial.</p>
+<h4 id="step-1_1">Step 1</h4>
+<p>Navigate to the tutorial repository on <a href="https://github.com/ICESAT-2HackWeek">GitHub</a>.</p>
+<p>Fork the tutorial repository to your personal GitHub account via the GitHub web user interface.</p>
+<p>For example, https://github.com/friedrichknuth/geospatial-analysis 
+forked from https://github.com/ICESAT-2HackWeek/geospatial-analysis.</p>
+<h4 id="step-2_1">Step 2</h4>
+<p>Clone the forked tutorial to your machine/Pangeo environment. You can easily copy the link to a repository by selecting the green "clone or download" dropdown and hitting the clipboard icon, which will automatically copy the link for you.</p>
+<p>Open a terminal (using the "plus" sign in your Pangeo JupyterHub) and execute:</p>
+<pre><code>$ git clone https://github.com/friedrichknuth/geospatial-analysis.git
+$ cd geospatial-analysis  
+</code></pre>
+
+<p><em>Note: a more detailed version of step 2, including images, is available as part of the <a href="https://icesat-2hackweek.github.io/learning-resources/preliminary/jupyterhub/#how-do-i-get-my-code-in-and-out-of-pangeo">Preliminary Steps - JupyterHub Connection</a>.</em></p>
+<h4 id="step-3_1">Step 3</h4>
+<p>Add the upstream master (a link to the tutorial repository you forked) so we can stay up to date with any changes made to the main tutorial.</p>
+<pre><code>$ git remote add upstream https://github.com/ICESAT-2HackWeek/geospatial-analysis.git
+</code></pre>
+
+<h4 id="step-4">Step 4</h4>
+<p>Fetch and merge the latest changes from upstream master.</p>
+<pre><code>$ git fetch upstream
+$ git merge upstream/master
+</code></pre>
+
+<h4 id="step-5">Step 5</h4>
+<p>Checkout a branch to make changes and follow along with the tutorial.</p>
+<pre><code>$ git checkout -b branch_name  
+</code></pre>
+
+<h4 id="step-6">Step 6</h4>
+<p>Follow along with the tutorial. You are welcome to make changes and notes as you go, and these will be saved to your forked copy in the next step.</p>
+<h4 id="step-7">Step 7</h4>
+<p>Commit your changes and push them up to your fork, under your branch.</p>
+<pre><code>$ git commit -am &quot;A short commit message noting what you have changed here&quot;  
+$ git push origin branch_name  
+</code></pre>
+
+<p>Now your fork will have your changes backed up to GitHub under your branch.</p>
+<p>If additional changes were made to the upstream master tutorial, you can checkout the master branch <code>$ git checkout master</code> and repeat step 4 to get the latest content, then checkout a new branch with a different name and follow along from there.</p>
+<p><strong><em> Please note: the Pangeo JupyterHub you are using for this Hackweek should not be relied upon to save your changes, and will be removed a few weeks after the Hackweek. Thus, you MUST complete Step 7 to push the changes to your GitHub fork of the tutorial if you would like to have continued access to any tutorial notes or changes you made. </em></strong></p>
+<hr />
+<p>Adapted from https://github.com/ICESAT-2HackWeek/topohack/wiki/Git-workflow-for-tutorials
+Originally from https://medium.com/sweetmeat/how-to-keep-a-downstream-git-repository-current-with-upstream-repository-changes-10b76fad6d97</p>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../../projects/overview/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../jupyter/" class="btn btn-neutral" title="Introduction to Jupyter"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -265,10 +297,6 @@
           <a href="https://github.com/icesat-2hackweek/learning-resources/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../jupyter/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../../projects/overview/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
