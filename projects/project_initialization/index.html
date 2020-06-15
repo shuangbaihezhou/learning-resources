@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Introduction to Python - ICESat-2 Hackweek Learning Resources</title>
+  <title>Project Initialization - ICESat-2 Hackweek Learning Resources</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Introduction to Python";
-    var mkdocs_page_input_path = "tutorials/python.md";
+    var mkdocs_page_name = "Project Initialization";
+    var mkdocs_page_input_path = "projects/project_initialization.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -125,25 +125,19 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../getting_started/">Getting Started</a>
+    <a class="" href="../../tutorials/getting_started/">Getting Started</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../github/">Introduction to GitHub</a>
+    <a class="" href="../../tutorials/github/">Introduction to GitHub</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../jupyter/">Introduction to Jupyter</a>
+    <a class="" href="../../tutorials/jupyter/">Introduction to Jupyter</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Introduction to Python</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#introduction-to-python">Introduction to Python</a></li>
-    
-
-    </ul>
+    <a class="" href="../../tutorials/python/">Introduction to Python</a>
                 </li>
     </ul>
 	    </li>
@@ -154,23 +148,43 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../projects/overview/">Overview</a>
+    <a class="" href="../overview/">Overview</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../projects/project_roles/">Project Roles and Responsibilities</a>
+    <a class="" href="../project_roles/">Project Roles and Responsibilities</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Project Initialization</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#project-initialization">Project Initialization</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#decide-on-a-short-memorable-project-name-discuss-with-your-team">Decide on a short, memorable project name (discuss with your team)</a></li>
+        
+            <li><a class="toctree-l4" href="#create-a-new-slack-channel-for-discussion">Create a new Slack channel for discussion:</a></li>
+        
+            <li><a class="toctree-l4" href="#create-a-new-github-repo-within-the-icesat-2-organization">Create a new Github repo within the ICESat-2 Organization:</a></li>
+        
+            <li><a class="toctree-l4" href="#create-a-new-github-team-within-the-icesat-2-organization">Create a new Github team within the ICESat-2 Organization:</a></li>
+        
+            <li><a class="toctree-l4" href="#add-the-project-team-to-your-project-repo">Add the project team to your project repo:</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../projects/project_initialization/">Project Initialization</a>
+    <a class="" href="../example_workflow/">Project Example Github Workflow and Data Sharing</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../projects/example_workflow/">Project Example Github Workflow and Data Sharing</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../projects/2019_projects/">2019 Hackweek Projects</a>
+    <a class="" href="../2019_projects/">2019 Hackweek Projects</a>
                 </li>
     </ul>
 	    </li>
@@ -223,14 +237,14 @@
     
       
         
-          <li>Tutorials &raquo;</li>
+          <li>Projects &raquo;</li>
         
       
     
-    <li>Introduction to Python</li>
+    <li>Project Initialization</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/tutorials/python.md"
+        <a href="https://github.com/icesat-2hackweek/learning-resources/edit/master/docs/projects/project_initialization.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -240,9 +254,40 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="introduction-to-python">Introduction to Python</h1>
-<p>This lesson provides an introduction to numpy, matplotlib, Pandas and geopandas. </p>
-<p>This tutorial is in development and this page is being continually updated. </p>
+                <h1 id="project-initialization">Project Initialization</h1>
+<p>The project lead(s) should do the following:</p>
+<h3 id="decide-on-a-short-memorable-project-name-discuss-with-your-team">Decide on a short, memorable project name (discuss with your team)</h3>
+<h3 id="create-a-new-slack-channel-for-discussion">Create a new Slack channel for discussion:</h3>
+<ol>
+<li>Click “+” icon next to Channels list in Slack sidebar -&gt; “Create a channel”</li>
+<li>Use short project name</li>
+<li>Invite your team members Slack members</li>
+</ol>
+<h3 id="create-a-new-github-repo-within-the-icesat-2-organization">Create a new Github repo within the ICESat-2 Organization:</h3>
+<ol>
+<li>Go to: https://github.com/ICESAT-2HackWeek</li>
+<li>Click the green “New” button on right side of page</li>
+<li>Select the sample_project_repository template</li>
+<li>Use short project name</li>
+<li>Public is ideal, can be Private for now and made public at end of event</li>
+<li>Click “Initialize with a README”</li>
+<li>Add .gitignore -&gt; Python</li>
+</ol>
+<h3 id="create-a-new-github-team-within-the-icesat-2-organization">Create a new Github team within the ICESat-2 Organization:</h3>
+<ol>
+<li>Go to: https://github.com/orgs/ICESAT-2HackWeek/teams (or click the “Teams” tab near the top of the Org page)</li>
+<li>Click green “New team” button</li>
+<li>Use short project name for “Team name”</li>
+<li>Add all team members - Click “Members” tab and green “Add a member” button</li>
+</ol>
+<h3 id="add-the-project-team-to-your-project-repo">Add the project team to your project repo:</h3>
+<ol>
+<li>Go to project repo page</li>
+<li>Click “Settings” tab in upper right corner</li>
+<li>Select “Manage access” on left side of page</li>
+<li>Add the team name under the Manage access section</li>
+<li>Select “write” to enable all team members to make commits</li>
+</ol>
               
             </div>
           </div>
@@ -250,10 +295,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../projects/overview/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../example_workflow/" class="btn btn-neutral float-right" title="Project Example Github Workflow and Data Sharing">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../jupyter/" class="btn btn-neutral" title="Introduction to Jupyter"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../project_roles/" class="btn btn-neutral" title="Project Roles and Responsibilities"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -281,10 +326,10 @@
           <a href="https://github.com/icesat-2hackweek/learning-resources/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../jupyter/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../project_roles/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../projects/overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../example_workflow/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
